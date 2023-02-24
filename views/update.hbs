@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/index.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="container">
+    <div class="title">Student Update</div>
+    <div class="content">
+      <form onsubmit="formSubmit(findOneStudent._id)" method="PUT">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Full Name</span>
+            <input type="text" name="name" value={{findOneStudent.name}} placeholder="Enter your name" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Board Roll</span>
+            <input type="text" name="roll" value={{findOneStudent.roll}} placeholder="Enter your Bord Roll" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="text" name="email" value={{findOneStudent.email}} placeholder="Enter your email" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Phone Number</span>
+            <input type="text" name="number" value={{findOneStudent.number}} placeholder="Enter your number" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Depertment Name</span>
+            <input type="text" name="department" value={{findOneStudent.department}} placeholder="Enter your Depertment Name" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Semister</span>
+            <input type="text" name="semister" value={{findOneStudent.semister}} placeholder="Enter your Semister" required>
+          </div>
+        </div>
+        <div class="button">
+          <input type="submit" value="Update">
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>

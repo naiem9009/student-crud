@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/index.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <title>Student register</title>
+   </head>
+<body>
+  <div class="container">
+    <div class="title">Student Registration</div>
+    <div class="content">
+      <form action="/students/register" method="post">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Full Name</span>
+            <input type="text" name="name" placeholder="Enter your name" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Board Roll</span>
+            <input type="text" name="roll" placeholder="Enter your Bord Roll" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="text" name="email" placeholder="Enter your email" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Phone Number</span>
+            <input type="text" name="number" placeholder="Enter your number" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Depertment Name</span>
+            <input type="text" name="department" placeholder="Enter your Depertment Name" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Semister</span>
+            <input type="text" name="semister" placeholder="Enter your Semister" required>
+          </div>
+        </div>
+        <div class="button">
+          <input type="submit" value="Register">
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
